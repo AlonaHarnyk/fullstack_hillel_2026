@@ -3,109 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson 2</title>
+    <title>Lesson 3</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <header>
-      <a href="./index.html">Logo</a>
-      <nav>
-        <ul>
-          <li><a href="./pages/test.html">Test page</a></li>
-          <li><a href="./pages/about.html">About page</a></li>
-        </ul>
-      </nav>
-    </header>
     <main>
-      <section>
-        <h2>Section title</h2>
-        <a href="#footer">Footer</a>
-        <ul>
-          <li>1. Item</li>
-          <li>2. Item</li>
-          <li>3. Item</li>
-        </ul>
-        <!-- <ol>
-          <li>Item</li>
-          <li>Item</li>
-          <li>Item</li>
-        </ol> -->
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora,
-          deserunt.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora,
-          deserunt.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora,
-          deserunt.
-        </p>
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSovFJNVwp_0n3UVo78Yc92NJbFaiFXUHSG9xTwj_EnEg&s=10"
-          alt="cat"
-          width="447"
-          height="447"
-        />
-      </section>
-      <section>
-        <h1>Main title</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
-          blanditiis voluptates aliquam iusto atque, nemo quae eius nesciunt.
-          Quibusdam non architecto expedita, fugit totam voluptatibus quas
-          delectus enim nobis. Nesciunt voluptatum quasi dolor eos voluptate ad
-          et quia aperiam nam obcaecati enim optio quaerat, eius deserunt vel
-          quam asperiores eligendi. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Consequuntur, nihil dicta? Expedita dignissimos ad
-          deserunt ipsam, commodi iusto sunt aliquam, repellat odio doloremque
-          in repudiandae sequi impedit. Rerum provident et corporis esse
-          accusamus maxime voluptate nisi omnis fugiat. Consectetur est dolorem
-          mollitia expedita perspiciatis doloribus numquam possimus! Fugit
-          voluptas in aliquam minima, ut incidunt laborum laudantium, tenetur
-          cum rem nisi vero dolor tempora soluta corrupti, architecto facilis
-          numquam alias esse voluptate. Labore soluta, doloribus beatae aut
-          omnis quisquam nobis vel nulla tempore aliquam unde tenetur animi
-          corrupti obcaecati ratione iusto culpa! Placeat rerum obcaecati
-          dignissimos harum distinctio eos quis quidem?
-        </p>
-      </section>
-      <section>
-        <h2>Section title</h2>
-        <a href="https://www.google.com/" target="_blank">Google</a>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Necessitatibus laboriosam rerum voluptatibus iusto, labore, ex harum
-          placeat voluptates incidunt quam fugiat omnis minima animi minus
-          reprehenderit! Consequatur fugit nam tempora corporis quaerat sapiente
-          excepturi reiciendis eum placeat a obcaecati suscipit ex fugiat
-          facilis voluptas eius quidem saepe doloribus dolore expedita quod,
-          debitis ut. Quasi, similique perferendis. Rerum recusandae labore
-          libero similique accusamus placeat quia nobis vel veritatis atque!
-          Accusamus ea doloremque amet laboriosam pariatur modi laudantium porro
-          quae. Fuga, similique et dicta amet saepe voluptate excepturi numquam
-          pariatur illum rem. Ipsum autem illo ut eveniet similique assumenda
-          nostrum accusantium recusandae. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Ullam, itaque ut doloribus illum quidem voluptate
-          recusandae? Blanditiis facilis alias iure molestias debitis officiis
-          consectetur voluptates provident nesciunt incidunt facere aliquam
-          excepturi dolor pariatur optio tempore vel, deserunt vitae! Laudantium
-          ea consequuntur ducimus maxime aspernatur, animi perspiciatis quisquam
-          iusto voluptate temporibus saepe ipsum deserunt necessitatibus
-          sapiente. Officia itaque vitae quis? Delectus in nam veniam? Adipisci
-          quibusdam similique, expedita deleniti laudantium possimus. Ut dicta
-          officia esse architecto iste debitis facere blanditiis inventore
-          necessitatibus fuga iure maiores fugit in, quam explicabo amet aliquid
-          sed cumque! Quaerat, corporis delectus omnis libero vel cupiditate
-          explicabo.
-        </p>
-      </section>
+      <form>
+        <input type="text" name="name" placeholder="Enter your name" />
+        <label>Password: <input type="password" name="password" /></label>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" />
+        <input type="number" name="age" />
+        <input type="date" name="birthdate" />
+        <input type="file" name="avatar" />
+        <textarea rows="4" cols="50" placeholder="Comment"></textarea>
+        <label>
+          Discount:
+          <select name="discount">
+            <option value="5">5%</option>
+            <option value="10">10%</option>
+            <option value="50">50%</option>
+          </select>
+        </label>
+        <fieldset>
+          <legend>Sex:</legend>
+          <label> <input type="radio" name="sex" />Male</label>
+          <label> <input type="radio" name="sex" />Female</label>
+        </fieldset>
+        <label><input type="checkbox" />Agree with rules</label>
+        <fieldset>
+          <legend>Choose hobbies:</legend>
+          <label
+            ><input name="hobby" type="checkbox" value="reading" />
+            Reading</label
+          >
+          <label
+            ><input name="hobby" type="checkbox" value="dancing" />
+            Dancing</label
+          >
+          <label
+            ><input name="hobby" type="checkbox" value="fishing" />
+            Fishing</label
+          >
+        </fieldset>
+        <button type="submit">Sumbit</button>
+        <button type="reset">Reset</button>
+      </form>
+      <button type="button" class="open">Click</button>
     </main>
-    <footer id="footer">
-      <address>
-        <a href="mailto:test@ukr.net">test@ukr.net</a>
-        <a href="tel:+380563562718">+380563562718</a>
-      </address>
-    </footer>
   </body>
 </html>
