@@ -1,7 +1,64 @@
-label {
-  color: orangered;
-  /* color: rgba(91, 205, 50); */
-  /* color: rgb(230, 40, 126, 0.5); */
-  /* color: #ff9900; */
-  /* color: #ff990050; */
+:root {
+  --main-text-color: #ff9900;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  background-color: bisque;
+  /* background-image: url('../images/cat.jpeg');
+  background-repeat: no-repeat;
+  background-position: center; */
+  /* background-position: right bottom; */
+  /* background-position: 50% 50%; */
+  /* background-position: 30% 30%; */
+  /* background-position: 200px 100px; */
+  /* background-size: 500px; */
+  /* background-size: cover; */
+  /* background-size: contain;
+  background-attachment: fixed; */
+  /* background:
+    url('../images//cat.jpeg') no-repeat right bottom,
+    url('../images/mountains.jpeg') no-repeat center / cover; 
+  background: linear-gradient(red, blue); */
+  /* background: linear-gradient(to right, red, blue); */
+  /* background: linear-gradient(to top, red, blue); */
+  /* background: linear-gradient(45deg, orange, blue); */
+  /* background: linear-gradient(to right, red, yellow, green); */
+  /* background: linear-gradient(to right, red 20%, blue 80%); */
+  /* background: radial-gradient(circle, white, blue); */
+  /* background: conic-gradient(red, yellow, green, blue, red);
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.first-text {
+  color: var(--main-text-color);
+  /* border-width: 5px;
+  border-style: solid;
+  border-color: brown; */
+  border: 5px solid brown;
+}
+
+.second-text {
+  color: var(--main-text-color);
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: calc(24/20);
+}
+
+.list {
+  list-style-type: square;
+  list-style-image: url('../images/pencil.svg')
 }
