@@ -1,64 +1,165 @@
-:root {
-  --main-text-color: #ff9900;
+/* * {
+  color: orangered;
+} */
+
+/* .section {
+  background-color: aqua;
+} */
+
+/* .section h2 {
+  color: red;
+} */
+
+/* .example h2 {
+  color: yellow;
+} */
+
+/* .section.example {
+  background-color: pink;
+} */
+
+/* 
+.section p {
+  color: blue;
 }
 
-a {
-  text-decoration: none;
+.section > p {
+  color: green;
 }
 
-ul {
-  list-style: none;
+.section .item {
+  font-size: 20px;
+} */
+
+/* 
+h2 + p {
+  color: blueviolet;
+} */
+
+/* h2 ~ p {
+  color: blueviolet;
+} */
+/* 
+p {
+  color: green
 }
+
+.text {
+  color: brown !important;
+} */
 
 section {
-  background-color: bisque;
-  /* background-image: url('../images/cat.jpeg');
-  background-repeat: no-repeat;
-  background-position: center; */
-  /* background-position: right bottom; */
-  /* background-position: 50% 50%; */
-  /* background-position: 30% 30%; */
-  /* background-position: 200px 100px; */
-  /* background-size: 500px; */
-  /* background-size: cover; */
-  /* background-size: contain;
-  background-attachment: fixed; */
-  /* background:
-    url('../images//cat.jpeg') no-repeat right bottom,
-    url('../images/mountains.jpeg') no-repeat center / cover; 
-  background: linear-gradient(red, blue); */
-  /* background: linear-gradient(to right, red, blue); */
-  /* background: linear-gradient(to top, red, blue); */
-  /* background: linear-gradient(45deg, orange, blue); */
-  /* background: linear-gradient(to right, red, yellow, green); */
-  /* background: linear-gradient(to right, red 20%, blue 80%); */
-  /* background: radial-gradient(circle, white, blue); */
-  /* background: conic-gradient(red, yellow, green, blue, red);
-}
-
-h2 {
-  text-align: center;
-  text-decoration: underline;
-  text-transform: uppercase;
-}
-
-.first-text {
-  color: var(--main-text-color);
-  /* border-width: 5px;
-  border-style: solid;
-  border-color: brown; */
-  border: 5px solid brown;
-}
-
-.second-text {
-  color: var(--main-text-color);
   font-size: 20px;
-  font-weight: 700;
-  font-style: italic;
-  line-height: calc(24/20);
+  color: orange;
+  border: 1px solid black;
 }
 
-.list {
-  list-style-type: square;
-  list-style-image: url('../images/pencil.svg')
+li {
+  font-size: 36px;
 }
+
+.text,
+.item-text {
+  font-size: 12px;
+}
+
+.click {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.click:hover,
+.click:focus {
+  color: olive;
+  background-color: aquamarine;
+  border: 2px solid red;
+  outline: none;
+}
+
+h2:hover {
+  text-decoration: underline;
+}
+
+/* 
+.list li:first-child {
+  color: blue;
+}
+
+li:last-child {
+  color: red;
+}
+
+li:nth-child(4) {
+  background-color: green;
+} */
+
+/* section p:first-of-type {
+  text-decoration: underline;
+}
+
+section p:last-of-type {
+  border-bottom: 1px solid black;
+}
+
+section p:nth-of-type(3) {
+  font-style: italic;
+} */
+
+/* h1,
+h2,
+h3 {
+  color: green;
+}
+
+:is(h1, h2, h3) {
+  color: green;
+}
+
+:is(.header, .footer) a {
+  color: red;
+} */
+
+/* :where(.header, .footer) a {
+  color: red;
+} */
+
+/* a {
+  color: blue;
+} */
+
+ul:has(li.active) {
+  background-color: yellow;
+}
+
+a:active {
+  background-color: aquamarine;
+}
+
+p::first-letter {
+  font-size: 200%;
+  color: red;
+}
+
+p::first-line {
+  color: chartreuse;
+}
+
+h2::after {
+  content: '★';
+  color: green;
+}
+
+h2::before {
+  content: '★';
+  color: green;
+}
+
+/* h2::after {
+  content: 'Super';
+  color: green;
+}
+
+h2::before {
+  content: 'Super';
+  color: green;
+} */
