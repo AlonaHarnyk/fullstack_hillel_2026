@@ -1,165 +1,49 @@
-/* * {
-  color: orangered;
-} */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-VariableFont_wdth\,wght.ttf');
+  font-weight: 100 900;
+}
 
-/* .section {
-  background-color: aqua;
-} */
+body {
+  font-family: 'Roboto', sans-serif;
+}
 
-/* .section h2 {
-  color: red;
-} */
-
-/* .example h2 {
-  color: yellow;
-} */
-
-/* .section.example {
-  background-color: pink;
-} */
-
-/* 
-.section p {
+p {
   color: blue;
 }
 
-.section > p {
-  color: green;
+.accent {
+  color: red;
+  font-weight: 700;
 }
 
-.section .item {
-  font-size: 20px;
-} */
-
-/* 
-h2 + p {
-  color: blueviolet;
-} */
-
-/* h2 ~ p {
-  color: blueviolet;
-} */
-/* 
-p {
-  color: green
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.text {
-  color: brown !important;
+/* .container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 } */
 
-section {
-  font-size: 20px;
-  color: orange;
+.content {
+  width: 50px;
+  background-color: aquamarine;
+  /* overflow-wrap: anywhere; */
+}
+
+table {
+  /* border-collapse: separate;
+  border-spacing: 2px; */
+  border-collapse: collapse;
+}
+
+th, td {
   border: 1px solid black;
 }
-
-li {
-  font-size: 36px;
-}
-
-.text,
-.item-text {
-  font-size: 12px;
-}
-
-.click {
-  border: 2px solid black;
-  border-radius: 10px;
-}
-
-.click:hover,
-.click:focus {
-  color: olive;
-  background-color: aquamarine;
-  border: 2px solid red;
-  outline: none;
-}
-
-h2:hover {
-  text-decoration: underline;
-}
-
-/* 
-.list li:first-child {
-  color: blue;
-}
-
-li:last-child {
-  color: red;
-}
-
-li:nth-child(4) {
-  background-color: green;
-} */
-
-/* section p:first-of-type {
-  text-decoration: underline;
-}
-
-section p:last-of-type {
-  border-bottom: 1px solid black;
-}
-
-section p:nth-of-type(3) {
-  font-style: italic;
-} */
-
-/* h1,
-h2,
-h3 {
-  color: green;
-}
-
-:is(h1, h2, h3) {
-  color: green;
-}
-
-:is(.header, .footer) a {
-  color: red;
-} */
-
-/* :where(.header, .footer) a {
-  color: red;
-} */
-
-/* a {
-  color: blue;
-} */
-
-ul:has(li.active) {
-  background-color: yellow;
-}
-
-a:active {
-  background-color: aquamarine;
-}
-
-p::first-letter {
-  font-size: 200%;
-  color: red;
-}
-
-p::first-line {
-  color: chartreuse;
-}
-
-h2::after {
-  content: '★';
-  color: green;
-}
-
-h2::before {
-  content: '★';
-  color: green;
-}
-
-/* h2::after {
-  content: 'Super';
-  color: green;
-}
-
-h2::before {
-  content: 'Super';
-  color: green;
-} */
