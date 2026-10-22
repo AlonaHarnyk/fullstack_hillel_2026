@@ -1,0 +1,43 @@
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+
+li {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+a {
+  width: 100%;
+  height: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background-color 1s linear;
+}
+
+a:hover,
+a:focus {
+  background-color: aquamarine;
+}
+
+svg {
+  width: 50%;
+  height: 50%;
+  fill: burlywood;
+  stroke: brown;
+  transition:
+    fill 1s linear,
+    stroke 1s linear;
+}
+
+a:hover svg,
+a:focus svg {
+  fill: rgb(111, 111, 238);
+  stroke: blue;
+}

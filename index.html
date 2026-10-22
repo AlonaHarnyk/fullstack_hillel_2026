@@ -8,59 +8,76 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <header>
-      <a class="link" href="./grid.html">Grid page</a>
+      <div class="container">
+        <a href="./index.html" class="logo">Dudeshape</a>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+        <ul class="external-links">
+          <li>
+            <a href="#">
+              <svg>
+                <use href="./images/sprite.svg#icon-user"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg>
+                <use href="./images/sprite.svg#icon-cart"></use></svg
+            ></a>
+          </li>
+          <li>
+            <a href="#">
+              <svg>
+                <use href="./images/sprite.svg#icon-list"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
-      <section>
+      <section class="hero">
         <div class="container">
-          <h2>Section title</h2>
-          <ul class="list">
+          <h1>Get Your Best Cosmetic Products Here</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy
+          </p>
+          <form>
+            <input type="text" placeholder="Search..." />
+            <button type="submit">
+              <svg>
+                <use href="./images/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+          <a href="./index.html">Shop Now</a>
+          <ul>
             <li>
-              <h3>Item title</h3>
-              <p>Item text</p>
+              <button>
+                <svg><use href="./images/sprite.svg#icon-left"></use></svg>
+              </button>
             </li>
             <li>
-              <h3>Item title</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
-                placeat?
-              </p>
-            </li>
-            <li>
-              <h3>Item title</h3>
-              <p>Item text</p>
-            </li>
-            <li>
-              <h3>Item title</h3>
-              <p>Item text</p>
-            </li>
-            <li>
-              <h3>Item title</h3>
-              <p>Item text</p>
-            </li>
-            <li>
-              <h3>Item title</h3>
-              <p>Item text</p>
-            </li>
-            <li>
-              <h3>Item title</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cum
-                magni unde deleniti commodi fuga nulla eius. Qui, quisquam.
-                Eaque?
-              </p>
-            </li>
-            <li>
-              <h3>Item title</h3>
-              <p>Item text</p>
-            </li>
-            <li>
-              <h3>Item title</h3>
-              <p>Item text</p>
+              <button>
+                <svg><use href="./images/sprite.svg#icon-right"></use></svg>
+              </button>
             </li>
           </ul>
         </div>

@@ -1,99 +1,93 @@
+:root {
+  --medium-color: #222222;
+}
+
+h1,
 h2,
 h3,
-p,
-ul {
+p {
   margin: 0;
-  padding: 0;
 }
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+/* HEADER */
+
+header {
+  position: absolute;
+  width: 100%;
 }
 
 .container {
-  width: 1200px;
-  padding: 0 15px;
+  width: 1280px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.list {
-  outline: 1px solid red;
+header .container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.list li {
-  width: 370px;
-  border: 1px solid black;
+.logo {
+  color: var(--medium-color);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  /* text-decoration-line: underline; */
+}
+
+.logo:after {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: var(--medium-color);
+}
+
+nav ul {
   display: flex;
-  flex-direction: column;
+  gap: 40px;
 }
 
-.list li h3 {
-  background-color: bisque;
+nav a {
+  padding: 40px 0;
+  display: block;
+  color: var(--medium-color);
+  font-size: 16px;
+  line-height: 1.25;
 }
 
-.list li p {
-  background-color: aquamarine;
-  flex-grow: 1;
+.external-links {
+  display: flex;
+  gap: 24px;
 }
 
-/* grid */
-
-.grid {
-  display: grid;
-  /* grid-template-columns: 370px 370px 370px; */
-  /* grid-template-columns: repeat(3, 370px); */
-  grid-template-columns: repeat(3, auto);
-  gap: 30px;
+.external-links li svg {
+  width: 24px;
+  height: 24px;
 }
 
-.grid li {
-  background-color: aqua;
-  border: 1px solid black;
-  height: 404px;
-}
+/* HERO */
 
-.grid .item1 {
-  background-color: blue;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  height: auto;
-}
-
-.grid .item2 {
-  background-color: blue;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 4;
-  grid-row-end: 6;
-  height: auto;
-}
-
-.link {
-  color: blue;
-  text-decoration: none;
-  font-size: 28px;
-  background-color: blanchedalmond;
-  /* transition-delay: 3000ms;
-  transition-duration: 5000ms;
-  transition-property: color, background-color;
-  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
-  transition:
-    color 1000ms ease-in-out,
-    background-color 1000ms ease-in-out;
-}
-
-.link:hover,
-.link:focus {
-  color: blueviolet;
-  background-color: darkkhaki;
+.hero {
+  padding-top: 138px;
+  background-color: #f9f6f5;
 }
