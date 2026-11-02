@@ -99,3 +99,21 @@ p {
     width: 370px;
   }
 }
+
+@media (max-width: 1000px) {
+  h2 {
+    color: blueviolet;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 800px) {
+  body {
+    background-color: chocolate;
+  }
+}
+
+@media print {
+  h2 {
+    display: none;
+  }
+}
