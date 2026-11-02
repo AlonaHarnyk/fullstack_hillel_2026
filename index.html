@@ -10,5 +10,47 @@
     />
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <section>
+      <div class="img-container">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/photo-desk1x.webp 1x,
+              ./images/photo-desk2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="./images/photo-desk1x.jpg 1x, ./images/photo-desk2x.jpg 2x"
+            type="image/jpeg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/photo-tab1x.webp 1x, ./images/photo-tab2x.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/photo-tab1x.jpg 1x, ./images/photo-tab2x.jpg 2x"
+            type="image/jpeg"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="./images/photo-mob1x.webp 1x, ./images/photo-mob2x.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="./images/photo-mob1x.jpg 1x, ./images/photo-mob2x.jpg 2x"
+            type="image/jpeg"
+          />
+          <img src="./images/cat-desktop.jpg" alt="man" />
+        </picture>
+      </div>
+      <div class="wrapper"></div>
+    </section>
+  </body>
 </html>
