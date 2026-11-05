@@ -1,0 +1,11 @@
+@use '../utils/vars';
+@use '../utils/placeholder';
+
+footer {
+  background-color: vars.$main-color;
+}
+
+.footer__button {
+  @extend %button;
+  background-color: red;
+}

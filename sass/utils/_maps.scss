@@ -1,0 +1,11 @@
+$colors: (
+  'main': brown,
+  'secondary': blue,
+  'green': #456839,
+);
+
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: $color;
+  }
+}

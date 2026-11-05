@@ -1,0 +1,34 @@
+// @use '../utils/placeholder';
+// @use '../utils/mixins';
+// @use '../utils/vars';
+@use '../utils';
+
+.hero {
+  background-color: aqua;
+
+  & > .container {
+    display: flex;
+  }
+
+  &__button {
+    @extend %button;
+    background-color: yellow;
+  }
+
+  &__title {
+    @include utils.font(utils.$section-title-font, 1.4, 700);
+  }
+
+  & p {
+    @include utils.font(16px, 1.2, 400);
+  }
+}
+
+// .hero > .container {
+//   display: flex;
+// }
+
+// .hero__button {
+//   @extend %button;
+//   background-color: yellow;
+// }
