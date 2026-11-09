@@ -1,7 +1,0 @@
-@use '../utils/maps';
-@use 'sass:map';
-
-header {
-  background-color: coral;
-  color: map.get(maps.$colors, 'secondary');
-}
