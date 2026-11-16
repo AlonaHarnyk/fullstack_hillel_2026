@@ -1,164 +1,172 @@
-// ❗️❗️❗️ NUMBER ❗️❗️❗️
-
-// ❗️❗️❗️ Приведення до числа
-// const a = '5';
-// console.log(a);
-// const b = Number(a);
-// const c = +a;
-// console.log(b);
-// console.log(c);
-
-// ❗️❗️❗️ Правила приведення різних типів до числа:
-// true --> 1
-// false --> 0
-// '', а також рядок з пробілами --> 0
-// null --> 0
-// undefined --> NaN
-// не порожній рядок --> якщо рядок складається лише з цифр, відбувається приведення до числа. В іншому випадку - NaN.
-
-// NaN // not a number
-// console.log(typeof NaN);
-
-// ❗️❗️❗️ Number.isNaN / isNaN
-
-// const a = 123;
-// const b = 'qwerty';
-
-// console.log(Number.isNaN(a)); // false
-// console.log(Number.isNaN(b)); // false
-
-// const toNumber = Number(b);
-// console.log(toNumber); // NaN;
-// console.log(Number.isNaN(toNumber)); // true;
-
-// console.log(isNaN(b)); // true;
-
-// const num1 = 5;
-// const num2 = 10;
-// const sum = num1 + num2;
-// console.log(sum);
-
-// console.log(10 - 5);
-// console.log(2 * 5);
-// console.log(10 / 5);
-
-// ❗️❗️❗️ Присвоєння з операцією
-
-// let value = 5;
-
-// value = value + 10;
-// console.log(value); // 15
-// value = value + 10;
-// console.log(value); // 25
-
-// value += 10;
-// console.log(value); // 15
-// value += 10;
-// console.log(value); // 25
-
-// let value1 = 10;
-
-// value1 = value1 - 2;
-// console.log(value1); // 8
-// value1 = value1 - 2;
-// console.log(value1); // 6
-
-// value1 -= 2;
-// console.log(value1); // 8
-// value1 -= 2;
-// console.log(value1); // 6
-
-// const num1 = Number.parseInt('56823.38erkjgvberk');
-// console.log(num1);
-// console.log(Number.isInteger(num1));
-// const num2 = Number.parseFloat('56823.38erkjgvberk');
-// console.log(num2);
-// console.log(Number.isInteger(num2));
-
-// const num3 = 124.3657;
-// const value = num3.toFixed(2);
-// console.log(value);
-// const num4 = Number(value);
-// console.log(num4);
-
-// const a = 0.1 + 0.2;
-// console.log(a);
-// console.log(a.toFixed(1));
-// const b = 0.3 + 0.6;
-// console.log(b);
-// console.log(b.toFixed(1));
-
-// ❗️❗️❗️ STRING ❗️❗️❗️
-
-// ❗️❗️❗️ Приведення до рядка
-// const num = 123;
-// const str1 = String(num);
-// console.log(str1);
-// const str2 = num + '';
-// console.log(str2);
-
-// const str3 = true + '';
-// console.log(str3);
-
-// ❗️❗️❗️ Шаблонні рядки (template strings)
-// const userName = prompt('What is your name?');
-// console.log(userName);
-
-// // const text = 'My name is Alona';
-// const text1 = `My name is ${userName}`;
-
-// console.log(text1);
-
-// ❗️❗️❗️ length
-// const a = 'erjejnretlknhkt';
-// console.log(a.length); // довжина
-
-// ❗️❗️❗️ indexes
-const a = 'superjavascript';
-
-// console.log(a[5]); // j
-// console.log(a[0]); // s
-// console.log(a[a.length - 1]); // t
-// console.log(a[20]); // undefined
-
-// ❗️❗️❗️ Методи рядків
-
-// const word = 'tEsT';
-// console.log(word.toLowerCase()); // test
-// console.log(word.toUpperCase()); // TEST
-
-const word1 = 'superjavascript';
-// console.log(word1.includes('super')); // true
-// console.log(word1.includes('html')); // false
-
-// console.log(word1.indexOf('java')); // 5
-// console.log(word1.indexOf('html')); // -1
-// console.log(word1.indexOf("a")); // 6
-// console.log(word1.lastIndexOf("a")); // 8
-
-// const word2 = '    string ';
-// console.log(word2.trim());
-// console.log(word2.trimEnd());
-// console.log(word2.trimStart());
-
-// const text1 = 'Я люблю яблука';
-// const newText = text1.replace('яблука', 'апельсини');
-// console.log(newText); // 'Я люблю апельсини'
-
-// const text2 = 'Рама, рама, рама';
-// console.log(text2.replaceAll('рама', 'двері')); // 'Рама, двері, двері'
-
-// const word3 = word1.slice();
-// console.log(word3); // копія
-// console.log(word1.slice(0)); // копія
-// console.log(word1.slice(0, word1.length)); // копію
-
-// console.log(word1.slice(5)); //javascript
-// console.log(word1.slice(0, 5)); //super
-// console.log(word1.slice(5, 9));
-
 // ❗️❗️❗️ Операції з приведенням типів
 
 // console.log(2 + 5 + '' + 1 + 0 - 10); // 700
 // console.log('710bjk' - 10); // NaN
 // console.log('' + 1 - 0); // 1
+// console.log(true + false); // 1
+// console.log(true + ''); // 'true'
+// console.log(true + 'false'); // 'truefalse'
+// console.log(true - 'false'); // NaN
+// console.log(6 / '3'); // 2;
+// console.log('2' * '3'); // 6
+// console.log(4 + 5 + 'px'); // '9px'
+// console.log('$' + 4 + 5); // '$45'
+// console.log('4' - 2); // 2
+// console.log('4' + 2); // '42'
+// console.log('4' / 2); // 2
+// console.log('4px' - 2); // NaN
+// console.log(7 / 0); // Infinity
+// console.log('  -9  ' + 5); // '  -9  5'
+
+// <, >, <=, >=, ==, ===, !=, !==
+
+// ❗️❗️❗️ Загальні правила порівняння
+
+// Результатом порівняння буде булеве значення.
+
+// При порівнянні різних типів JavaScript може приводити операнди
+// до спільного типу (для ==, !=, <, >, <=, >=).
+
+// === та !== не виконують приведення типів.
+
+// null дорівнює тільки null та undefined при нестрогому порівнянні:
+// null == null → true
+// null == undefined → true
+
+// undefined дорівнює тільки undefined та null при нестрогому порівнянні:
+// undefined == undefined → true
+// undefined == null → true
+
+// NaN не дорівнює нічому, навіть самому собі:
+// NaN === NaN → false
+// NaN == NaN → false
+
+// Якщо обидва операнди — рядки, вони порівнюються посимвольно
+// за значеннями Unicode.
+
+// console.log(null == 0); // false
+// console.log(undefined == 0); // false
+// console.log(undefined == null); // true
+// console.log('123' == 123); // true
+// console.log(4 == 5); // false
+// console.log('123' === 123); // false
+// console.log(null === null); // true
+// console.log(2 + 2 === 4); // true
+// console.log(NaN === NaN); // false
+// console.log(undefined === null); // false
+// console.log('4' != 4); // false
+// console.log('4' !== 4); // true
+
+// ❗️❗️❗️ Приведення до boolean
+// const a = 5;
+// console.log(Boolean(a));
+// console.log(!!a);
+
+// (falsy) значення, що приводяться до false у логічному перетворенні:
+// 0
+// NaN
+// null
+// undefined
+// порожній рядок
+// false
+
+// Абсолютно все інше приводиться до true.
+
+// ❗️❗️❗️  Логічні оператори (&&,  ||,  !)
+
+// У логічних операціях  відбуваєтьмя приведення типів операндів до true або false.
+
+// && - зупиняється на false
+
+// console.log(0 && 6); // 0
+// console.log(5 && 'test'); // 'test'
+
+// || - зупиняється на true
+
+// console.log(5 || 'test'); // 5
+// console.log(0 || 6); // 6
+
+// ! - інвертує true в false, або false в true
+
+// console.log(!5); // false
+// console.log(!0); // true
+
+// console.log(true && 3); // 3
+// console.log(false && 3); // false
+// console.log(false && false); // false
+// console.log(true && 4 && 'kiwi'); // 'kiwi'
+// console.log(true && '' && 'kiwi'); // ''
+// console.log(true && ' ' && 'kiwi'); // 'kiwi'
+// console.log(true && 0 && 'kiwi'); // 0
+// console.log(true || 3); // true
+// console.log(true || 3 || 4); // true
+// console.log(true || false || 7); // true
+// console.log(false || true || 7); // true
+// console.log(null || 2 || undefined); // 2
+// console.log((1 && null && 2) > 0); // false
+// console.log(null || (2 && 3) || 4); // 3
+// console.log(null || (null && 3) || 4); // 4
+
+// ?? - оператор нульового злиття
+
+// console.log(null ?? 1); // 1
+// console.log(undefined ?? 1); // 1
+// console.log(false ?? 1); // false
+// console.log(0 ?? 1); // 0
+
+// ❗️❗️❗️ Оператори розгалудження
+
+// const number1 = Number(prompt('Please, enter a number 1'));
+// const number2 = Number(prompt('Please, enter a number 2'));
+
+// if (number1 > number2) {
+//   console.log('+');
+// }
+
+// if (number1 < number2) {
+//   console.log('-');
+// }
+
+// if (number1 > number2) {
+//   console.log('+');
+// } else {
+//   console.log('-');
+// }
+
+// if (number1 > number2) {
+//   console.log('+');
+// } else if (number1 < number2) {
+//   console.log('-');
+// } else if (number1 === number2) {
+//   console.log('=');
+// }
+
+// if (number1 > number2) {
+//   console.log('+');
+// } else if (number1 < number2) {
+//   console.log('-');
+// } else {
+//   console.log('=');
+// }
+
+// if (number1 === number2) {
+//   console.log("=");
+// } else {
+//   if (number1 > number2) {
+//     console.log('+');
+//   } else {
+//     console.log('-');
+//   }
+// }
+
+// if (5 && true) {
+//   console.log('here1');
+// }
+
+// if (false || 0) {
+//   console.log('here2');
+// }
+
+// if (!null) {
+//   console.log('here3');
+// }
